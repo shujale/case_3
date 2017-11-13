@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/** Color **/
+/** Typography **/
+/** Section padding **/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc; }
+
+a {
+  text-decoration: none;
+  color: #3a4b9f; }
+  a:hover, a:focus {
+    color: #7382cc; }
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700; }
+
+.btn-primary {
+  border-radius: 3px;
+  background-color: transparent;
+  border: 2px solid #3a4b9f;
+  color: #ffffff; }
+  .btn-primary:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #3a4b9f; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
