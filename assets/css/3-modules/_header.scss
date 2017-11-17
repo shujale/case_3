@@ -1,0 +1,31 @@
+//Info bar øverst
+header.info__1 {
+    background-color: $primary-color;
+    padding: 5px 0;
+    color: $white-color;
+
+    .info__items {
+        margin-right: 75px;
+
+        .fa {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media(max-width: 991px)
+{
+    header.info__1{
+        display: none;
+    }
+}
+
+// Header container (Menu bar & logo placering ift. hinanden)
+header.header__container {
+    padding: 15px 0;
+    
+    .nav__logo__placeholder{
+        display: flex;
+        justify-content: space-between;
+    }
+}

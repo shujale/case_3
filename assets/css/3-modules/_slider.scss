@@ -1,0 +1,168 @@
+/********************************/
+
+/*       Fade Bs-carousel       */
+
+/********************************/
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-inner{
+    min-height: 500px;
+}
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    opacity: .7;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.fade-carousel .carousel-indicators > li.active {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+}
+
+.carousel-indicators{
+    top: 73%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black-color;
+    opacity: .8;
+}
+
+/********************************/
+
+/*          Hero Headers        */
+
+/********************************/
+
+.hero {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.hero h1 {
+    font-size: 69px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 3s all ease-in-out .2s;
+    -moz-transition: 3s all ease-in-out .2s;
+    -ms-transition: 3s all ease-in-out .2s;
+    -o-transition: 3s all ease-in-out .2s;
+    transition: 3s all ease-in-out .2s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+
+/********************************/
+
+/*          Custom Buttons      */
+
+/********************************/
+
+.btn.btn-lg {
+    padding: 10px 40px;
+}
+
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+
+/*       Slides backgrounds     */
+
+/********************************/
+
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-1 {
+    background-image: url(../assets/images/slide1.jpg);
+    width: 100%;
+    height: 100%;
+        background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-2 {
+    background-image: url(/images/header--img.png);
+}
+
+.fade-carousel .slides .slide-3 {
+    background-image: url(/images/header--img.png);
+}
+
+/********************************/
+
+/*          Media Queries       */
+
+/********************************/
+
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 980px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 4em;
+    }
+}

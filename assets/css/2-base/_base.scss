@@ -1,37 +1,37 @@
 // Basic styles 
-
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: $body-color;
-} 
+}
 
 // Links
-
-a{
+a {
     text-decoration: none;
     color: $primary-color;
-    
+
     &:hover,
-    &:focus{
+    &:focus {
         color: lighten($primary-color, 20%);
     }
 }
 
 // Buttons 
-
-.btn{
+.btn {
+    max-width: 150px;
     font-family: $heading-font;
     font-weight: 700;
 }
 
-.btn-primary{
+
+.btn-primary {
+    width: 150px; 
     border-radius: 3px;
     background-color: transparent;
-    border: 2px solid $primary-color;
+    border: 2px solid $white-color;
     color: $white-color;
-    
-    &:hover{
+
+    &:hover {
         background-color: $white-color;
         border: 2px solid $white-color;
         color: $primary-color;
@@ -40,11 +40,55 @@ a{
 
 
 // Typography 
-
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $heading-font;
 }
 
-p{
-    font-family: $bodytext-font; 
+p {
+    font-family: $bodytext-font;
+}
+
+// Logo
+.logo {
+    max-width: 350px;
+    margin-left: 33px;
+}
+
+@media(min-width: 992px)
+    {
+.logo {
+    max-width: 350px;
+    margin-left: 33px;
+}
+    }
+
+// Kontakt formular bokse
+.form__wrapper{
+   display: flex;
+    justify-content: center;
+}
+
+
+.form-control {
+    border-radius: 3px !important;
+    border: none;
+    margin-right: 19px;
+}
+
+@media(min-width: 992px)
+{
+    .form-group{
+        margin-bottom: 0; 
+    }
+}
+
+//Placeholders 
+input::placeholder {
+  color: $gray-color !important;
+  font-weight: 600;
 }
