@@ -1,4 +1,4 @@
-// Basic styles 
+// Basic styles
 body {
     margin: 0;
     padding: 0;
@@ -16,16 +16,17 @@ a {
     }
 }
 
-// Buttons 
+// Buttons
 .btn {
     max-width: 150px;
     font-family: $heading-font;
     font-weight: 700;
-}
+    text-transform: uppercase;
+} 
 
 
 .btn-primary {
-    width: 150px; 
+    width: 150px;
     border-radius: 3px;
     background-color: transparent;
     border: 2px solid $white-color;
@@ -39,7 +40,7 @@ a {
 }
 
 
-// Typography 
+// Typography
 h1,
 h2,
 h3,
@@ -83,11 +84,11 @@ p {
 @media(min-width: 992px)
 {
     .form-group{
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 }
 
-//Placeholders 
+//Placeholders
 input::placeholder {
   color: $gray-color !important;
   font-weight: 600;

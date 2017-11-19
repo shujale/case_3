@@ -8,5 +8,17 @@ section.kontakt_formular_forside{
 }
 
 section.citat__section{
-    padding: $section-padding-two; 
+    padding: $section-padding-two;
+}
+
+section.default__section{
+  padding: $section-padding-three;
+  background-color: $primary-color;
+  color: $white-color;
+  text-transform: uppercase;
+
+  h2{
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
 }

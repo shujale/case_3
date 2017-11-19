@@ -17,7 +17,8 @@ a {
 .btn {
   max-width: 150px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .btn-primary {
   width: 150px;
@@ -248,6 +249,37 @@ header.header__container {
     display: flex;
     justify-content: space-between; }
 
+footer .footer__wrapper {
+  padding: 50px 0; }
+  footer .footer__wrapper .footer__title {
+    font-size: 24px;
+    color: #1d1d1d;
+    font-weight: 700;
+    margin-bottom: 42px; }
+  footer .footer__wrapper p {
+    font-family: "Open Sans", sans-serif; }
+  footer .footer__wrapper ul {
+    padding-left: 0; }
+    footer .footer__wrapper ul li {
+      list-style-type: none;
+      margin-bottom: 10px; }
+      footer .footer__wrapper ul li:before {
+        content: "";
+        background: url("assets/images/double-arrow.svg") no-repeat;
+        width: 50px;
+        height: 50px; }
+      footer .footer__wrapper ul li a {
+        color: #3a4b9f; }
+
+.copyright__wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #3a4b9f;
+  color: #ffffff;
+  padding: 20px 0; }
+  .copyright__wrapper .copyright__content {
+    font-size: 16px; }
+
 section.genvej__section {
   padding: 50px 0; }
 
@@ -257,6 +289,15 @@ section.kontakt_formular_forside {
 
 section.citat__section {
   padding: 100px 0; }
+
+section.default__section {
+  padding: 50px 0;
+  background-color: #3a4b9f;
+  color: #ffffff;
+  text-transform: uppercase; }
+  section.default__section h2 {
+    font-weight: 700;
+    margin-bottom: 30px; }
 
 .genvej__boks {
   position: relative;
