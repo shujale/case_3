@@ -11,7 +11,7 @@ body {
 a {
   text-decoration: none;
   color: #3a4b9f; }
-  a:hover, a:focus {
+  a:focus, a:hover {
     color: #7382cc; }
 
 .btn {
@@ -43,13 +43,15 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .logo {
-  max-width: 350px;
-  margin-left: 33px; }
+  max-width: 200px;
+  margin-left: 33px;
+  margin-top: 20px; }
 
 @media (min-width: 992px) {
   .logo {
     max-width: 350px;
-    margin-left: 33px; } }
+    margin-left: 33px;
+    margin-top: 0; } }
 .form__wrapper {
   display: flex;
   justify-content: center; }
