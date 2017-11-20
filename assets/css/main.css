@@ -313,8 +313,9 @@ footer .footer__wrapper {
 
   .footer__mobile {
     display: block;
-    padding: 20px 0;
-    font-size: 16px; } }
+    padding: 20px 0; }
+    .footer__mobile .footer__mobile__content {
+      font-size: 14px; } }
 section.genvej__section {
   padding: 50px 0; }
 
