@@ -26,7 +26,7 @@ a {
   background-color: transparent;
   border: 2px solid #ffffff;
   color: #ffffff; }
-  .btn-primary:hover {
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background-color: #ffffff;
     border: 2px solid #ffffff;
     color: #3a4b9f; }
@@ -44,16 +44,19 @@ p {
 
 .logo {
   max-width: 200px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 20px; }
 
 @media (min-width: 992px) {
   .logo {
     max-width: 350px;
-    margin-left: 33px;
-    margin-top: 0; } }
+    margin-left: 33px; } }
 .form__wrapper {
   display: flex;
   justify-content: center; }
+
+.form-group {
+  margin-bottom: 30px; }
 
 .form-control {
   border-radius: 3px !important;
@@ -67,21 +70,39 @@ input::placeholder {
   color: #646464 !important;
   font-weight: 600; }
 
-.navbar {
+.navbar-default {
+  background-color: transparent;
+  border: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 700; }
-  .navbar .nav-link {
-    color: #1d1d1d !important; }
-    .navbar .nav-link:hover {
+  .navbar-default .navbar-nav {
+    float: none; }
+  .navbar-default .nav-link {
+    color: #1d1d1d !important;
+    text-transform: uppercase; }
+    .navbar-default .nav-link:hover {
       color: #3a4b9f !important; }
 
-.navbar-light .navbar-toggler {
+@media (min-width: 992px) {
+  .navbar-default {
+    background-color: transparent;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
+    .navbar-default .navbar-nav {
+      float: right;
+      margin-top: 20px; }
+    .navbar-default .nav-link {
+      color: #1d1d1d !important; }
+      .navbar-default .nav-link:hover {
+        color: #3a4b9f !important; } }
+.navbar-toggle {
   border: none;
-  border-color: transparent !important; }
-
-.navbar-toggler-icon {
-  position: relative; }
-  .navbar-toggler-icon:before {
+  border-color: transparent !important;
+  margin-top: 12px; }
+  .navbar-toggle:focus, .navbar-toggle:hover {
+    background-color: transparent !important; }
+  .navbar-toggle:before {
     content: 'Menu';
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
@@ -89,17 +110,22 @@ input::placeholder {
     text-transform: uppercase;
     color: #1d1d1d;
     position: absolute;
-    top: 15px;
     left: -51px; }
+  .navbar-toggle .icon-bar {
+    width: 50px;
+    height: 5px;
+    border-radius: 500px;
+    background-color: #1d1d1d !important; }
 
-.custom-toggler.navbar-toggler {
-  border-color: #1d1d1d; }
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(29,29,29)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-.navbar-toggler-icon {
-  padding: 25px; }
+@media (max-width: 991px) {
+  .navbar-default .navbar-nav li {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px; }
+  .navbar-default .nav-link {
+    display: flex;
+    justify-content: center; } }
+.navbar-collapse.in {
+  overflow-y: hidden; }
 
 /********************************/
 /*       Fade Bs-carousel       */
@@ -246,9 +272,6 @@ header.info__1 {
     display: none; } }
 header.header__container {
   padding: 15px 0; }
-  header.header__container .nav__logo__placeholder {
-    display: flex;
-    justify-content: space-between; }
 
 footer .footer__wrapper {
   padding: 50px 0; }
@@ -272,6 +295,9 @@ footer .footer__wrapper {
       footer .footer__wrapper ul li a {
         color: #3a4b9f; }
 
+.footer__mobile {
+  display: none; }
+
 .copyright__wrapper {
   display: flex;
   justify-content: center;
@@ -281,6 +307,14 @@ footer .footer__wrapper {
   .copyright__wrapper .copyright__content {
     font-size: 16px; }
 
+@media (max-width: 991px) {
+  .footer__wrapper {
+    display: none; }
+
+  .footer__mobile {
+    display: block;
+    padding: 20px 0;
+    font-size: 16px; } }
 section.genvej__section {
   padding: 50px 0; }
 
@@ -325,6 +359,10 @@ section.default__section {
     .genvej__boks .genvej__boks__knap .genvej__titel {
       font-size: 30px;
       font-weight: 700; }
+
+.genvej__boks__tekst {
+  text-align: center;
+  margin: 20px 0; }
 
 @media (min-width: 992px) {
   .genvej__boks {

@@ -36,8 +36,12 @@ footer {
     }
   }
 }
-//Copyright
+//Footer til mobile
 
+.footer__mobile {
+  display: none;
+}
+//Copyright
 .copyright__wrapper {
   display: flex;
   justify-content: center;
@@ -46,6 +50,17 @@ footer {
   padding: 20px 0;
 
   .copyright__content {
+    font-size: 16px;
+  }
+}
+@media(max-width: 991px) {
+  .footer__wrapper {
+    display: none;
+  }
+
+  .footer__mobile {
+    display: block;
+    padding: 20px 0;
     font-size: 16px;
   }
 }
