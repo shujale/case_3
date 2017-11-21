@@ -377,6 +377,15 @@ footer .footer__wrapper {
     padding-bottom: 20px; }
     .footer__mobile .footer__mobile__content {
       font-size: 12px; } }
+section.default__section {
+  padding: 50px 0;
+  background-color: #3a4b9f;
+  color: #ffffff;
+  text-transform: uppercase; }
+  section.default__section h2 {
+    font-weight: 700;
+    margin-bottom: 30px; }
+
 section.genvej__section {
   padding: 50px 0; }
 
@@ -387,15 +396,6 @@ section.kontakt_formular_forside {
 section.citat__section {
   padding: 100px 0; }
 
-section.default__section {
-  padding: 50px 0;
-  background-color: #3a4b9f;
-  color: #ffffff;
-  text-transform: uppercase; }
-  section.default__section h2 {
-    font-weight: 700;
-    margin-bottom: 30px; }
-
 section.om-os-hero {
   padding: 50px 0;
   color: #ffffff;
@@ -405,13 +405,18 @@ section.om-os-hero {
   section.om-os-hero h1 {
     font-weight: 700; }
 
+@media (min-width: 580px) {
+  section.om-os-hero {
+    padding: 100px 0; } }
+@media (min-width: 767px) {
+  section.om-os-hero {
+    padding: 200px 0; } }
 section.timeline {
   padding: 50px 0; }
   section.timeline h2 {
     font-weight: 700; }
   section.timeline hr {
-    margin: auto;
-    margin-bottom: 50px; }
+    margin: auto auto 50px; }
 
 .genvej__boks {
   position: relative;
