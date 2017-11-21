@@ -22,3 +22,28 @@ section.default__section{
     margin-bottom: 30px;
   }
 }
+
+section.om-os-hero{
+  padding: $section-padding-three;
+  color: $white-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1{
+    font-weight: 700;
+  }
+}
+
+section.timeline{
+  padding: $section-padding-three;
+
+  h2{
+    font-weight: 700;
+  }
+
+  hr{
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}

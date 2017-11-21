@@ -1,0 +1,26 @@
+.box__about{
+  padding: 50px;
+
+    .box__title{
+      font-weight: 700;
+    }
+}
+
+.box__one,
+.box__two,
+.box__three{
+  color: $white-color;
+  font-size: 18px;
+}
+
+.box__one{
+  background-color: $primary-color;
+}
+
+.box__two{
+  background-color: $black-color;
+}
+
+.box__three{
+  background-color: $primary-color;
+}
