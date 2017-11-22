@@ -88,3 +88,30 @@
         display: inline-block;
     }
 }
+
+//Css til info box
+#img_info{
+    width: 30%;
+    height: 250px;
+    float: right;
+    display: inline-block;
+    align-content: center;
+    margin-top: 0%;
+    border: 1px solid;
+}
+
+.boks{
+    padding: 20px;
+    color: $white-color;
+}
+.info_boks{
+    background-color: $primary-color;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 0% 70% 0% 0%;
+}
+
+@media(min-width: 768px)
+{
+
+}

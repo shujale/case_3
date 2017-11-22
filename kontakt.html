@@ -64,7 +64,7 @@
   </header>
   <!-- Navigation slut-->
   <!-- Hero section -->
-  <section style="background-image: url(./assets/images/joergen.jpg)" class="kontakt-os-hero">
+  <section style="background-image: url(./assets/images/arbejdsopg.jpg)" class="kontakt-os-hero">
     <div class="container">
       <div class="row text-center">
         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -85,7 +85,7 @@
               <h1 class="contact__title">Kontakt os</h1>
               <p>Murermester Jørgen Høgedal Aps</p>
               <p><b>Adresse:</b> Nørager 12, 7260, Sdr. Omme</p>
-              <p><b>Telefonummer:</b> +45  22 24 10 39</p>
+              <p><b>Telefonummer:</b> +45 22 24 10 39</p>
               <p><b>E-mail:</b> jhoegedal@jubii.dk</p>
             </div>
           </div>
@@ -97,7 +97,7 @@
               <div class="myform"></div>
               <form action="mail_handler.php" method="post" name="form" class="form-box">
                 <div class="info">
-                  <h1>Nysgerrig efter hvad vi kan gøre for dig? - Smid os en besked</h1></div>
+                  <h1>Tilmeld dig idag og tjen penge på din bil imorgen </h1></div>
                 <div class="form_item form_col1">
                   <label for="navn">Fornavn</label><br>
                   <div>
@@ -112,23 +112,24 @@
                 </div>
 
                 <div class="form_item form_col1">
-                  <label for="tlf"> Telefonnummer</label><br>
+                  <label for="tlf"> Telefon nummer</label><br>
                   <div>
                     <input type="tel" name="Tlf" class="inp" id="tlf" placeholder="+45 xx xxx xxx" required><br><br>
                   </div>
                 </div>
+
                 <div class="form_item form_col2">
-                  <label for="mail"> E-mail</label><br>
+                  <label for="mail">E-mail</label><br>
                   <div>
-                    <input type="mail" name="mail" class="inp" id="mail" placeholder="Eksempel@gmail.com"><br><br>
+                    <input type="bil" name="mail" class="inp" id="mail" placeholder="Eksempel@gmail.com" required><br><br>
                   </div>
                 </div>
-                <div class="form_item2">
-                  <div>
-                    <textarea id="msg" name="msg" rows="4" cols="50" placeholder="Skriv en besked..."></textarea>
-                  </div>
+                <div class="form_item form_col3">
+                  <textarea class="msg" name="besked"></textarea>
+
                 </div>
-                <div class="form_item"><input type="submit" name="Sendmsg" value="Send" class="btn btn-primary" id="sub-btn"></div>
+
+                <div class="form_item"><input type="submit" name="Sendmsg" value="Send" class="my_btn" id="sub-btn"></div>
               </form>
             </div>
           </div>
@@ -139,10 +140,11 @@
   <section>
     <div class="container-fluid">
       <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.1641798877704!2d8.886118816180547!3d55.842465480577545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b0a2a3ebc5737%3A0x9d4c2ad03f3ec55a!2sN%C3%B8rager+12%2C+7260+S%C3%B8nder-Omme!5e0!3m2!1sda!2sdk!4v1511327701373" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.1641798877704!2d8.886118816180547!3d55.842465480577545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b0a2a3ebc5737%3A0x9d4c2ad03f3ec55a!2sN%C3%B8rager+12%2C+7260+S%C3%B8nder-Omme!5e0!3m2!1sda!2sdk!4v1511327701373"
+          width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
-   </section>
+  </section>
   <!-- Google map til adresse slut -->
   <!-- Footer -->
   <footer>

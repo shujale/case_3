@@ -4,16 +4,17 @@
         $Efternavn=$_POST['Efternavn'];
         $Tlf=$_POST['Tlf'];
         $mail=$_POST['mail'];
-        $msg=$_POST['msg'];
+        $besked=$_POST['besked'];
+
 
 
         $to='mmrangeen@gmail.com';
         $subject='Form Murermester Jørgen Høgedal Aps';
-        $message="Navn: ".$Navn."\n"."Efternavn: ".$Efternavn."\n"."Tlf: ".$Tlf."\n"."mail: ".$mail."\n"."msg: ".$msg."\n"."\n";
+        $message="Navn: ".$Navn."\n"."Efternavn: ".$Efternavn."\n"."Tlf: ".$Tlf."\n"."mail: ".$mail."\n"."Besked: ".$besked."\n"."\n";
         $headers="From: ".$email;
 
         if(mail($to, $subject, $message, $headers)){
-            echo "<h1> Tak for din henvendelse"." ".$Navn.", vi kontakter dig snarest muligt.</h1>";
+            echo "<h1> Tak for din henvendelse"." ".$Navn.", du vil blive kontaktet snarest muligt</h1>";
         }
         else{
             echo "Noget gik galt, prøv igen";

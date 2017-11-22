@@ -22,11 +22,17 @@ section.kontakt_formular_forside {
   padding: $section-padding-three;
 }
 
-section.citat__section {
+section.info__box__section {
+  display: none;
   padding: $section-padding-two;
 }
+@media(min-width: 768px) {
+  section.info__box__section {
+    display: block;
+    padding: $section-padding-two;
+  }
+}
 //Sektioner på om os siden
-
 section.om-os-hero {
   padding: $section-padding-three;
   color: $white-color;
@@ -60,8 +66,12 @@ section.timeline {
     margin: auto auto 50px;
   }
 }
-//Sektioner på kontakt siden
+//Sektioner på arbejdsopgaver siden
 
+section.arb_opg__section {
+  padding: $section-padding-two;
+}
+//Sektioner på kontakt siden
 section.kontakt-os-hero {
   padding: $section-padding-three;
   color: $white-color;
@@ -75,6 +85,6 @@ section.kontakt-os-hero {
   }
 }
 
-section.info__form__section{
+section.info__form__section {
   padding: $section-padding-three;
 }

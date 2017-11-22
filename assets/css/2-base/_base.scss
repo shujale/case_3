@@ -5,9 +5,7 @@ body {
   padding: 0;
   background-color: $body-color;
 }
-
 // Links
-
 a {
   text-decoration: none;
   color: $primary-color;
@@ -33,17 +31,33 @@ a {
   border: 2px solid $white-color;
   color: $white-color;
 
-  &:hover,
+  &:active,
   &:focus,
-  &:active {
+  &:hover {
     background-color: $white-color;
     border: 2px solid $white-color;
     color: $primary-color;
   }
 }
 
+.btn-secondary {
+  width: 150px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    color: $white-color;
+  }
+}
 //Horisontal ruler
-.hr-primary{
+
+.hr-primary {
   width: 100px;
   height: 2px;
   margin-left: 0;
@@ -51,22 +65,20 @@ a {
   border: none;
 }
 
-.hr-white{
+.hr-white {
   width: 100px;
   height: 2px;
   margin-left: 0;
   background-color: $white-color;
   border: none;
 }
-
 //Reset padding
-.reset-padding{
+
+.reset-padding {
   padding-left: 0;
   padding-right: 0;
 }
-
 // Typography
-
 h1,
 h2,
 h3,
@@ -98,9 +110,11 @@ p {
   display: flex;
   justify-content: center;
 }
-.form-group{
+
+.form-group {
   margin-bottom: 30px;
 }
+
 .form-control {
   border-radius: 3px !important;
   border: none;

@@ -26,10 +26,21 @@ a {
   background-color: transparent;
   border: 2px solid #ffffff;
   color: #ffffff; }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
     background-color: #ffffff;
     border: 2px solid #ffffff;
     color: #3a4b9f; }
+
+.btn-secondary {
+  width: 150px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 2px solid #3a4b9f;
+  color: #3a4b9f; }
+  .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+    background-color: #3a4b9f;
+    border: 2px solid #3a4b9f;
+    color: #ffffff; }
 
 .hr-primary {
   width: 100px;
@@ -393,9 +404,14 @@ section.kontakt_formular_forside {
   background-color: #3a4b9f;
   padding: 50px 0; }
 
-section.citat__section {
+section.info__box__section {
+  display: none;
   padding: 100px 0; }
 
+@media (min-width: 768px) {
+  section.info__box__section {
+    display: block;
+    padding: 100px 0; } }
 section.om-os-hero {
   padding: 50px 0;
   color: #ffffff;
@@ -417,6 +433,9 @@ section.timeline {
     font-weight: 700; }
   section.timeline hr {
     margin: auto auto 50px; }
+
+section.arb_opg__section {
+  padding: 100px 0; }
 
 section.kontakt-os-hero {
   padding: 50px 0;
@@ -492,6 +511,25 @@ section.info__form__section {
 
   .genvej__boks__knap:hover .btn-primary {
     display: inline-block; } }
+#img_info {
+  width: 30%;
+  height: 250px;
+  float: right;
+  display: inline-block;
+  align-content: center;
+  margin-top: 0%;
+  border: 1px solid; }
+
+.boks {
+  padding: 20px;
+  color: #ffffff; }
+
+.info_boks {
+  background-color: #3a4b9f;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 0% 70% 0% 0%; }
+
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -618,6 +656,13 @@ section.info__form__section {
 .timeline-body > p + p {
   margin-top: 5px; }
 
+.filter__container {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .filter__container .btn-secondary {
+    min-width: 200px;
+    margin-bottom: 20px; }
+
 .box__about {
   padding: 50px; }
   .box__about .box__title {
@@ -648,9 +693,6 @@ section.info__form__section {
 .overskrift_1 {
   text-align: center;
   padding-top: 120px; }
-
-.arbejdopg_container {
-  padding: 5%; }
 
 .tekst {
   line-height: 2; }
