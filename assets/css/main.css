@@ -334,7 +334,10 @@ input::placeholder {
     font-size: 30px; } }
 @media (min-width: 1200px) {
   .hero {
-    top: 30%; } }
+    top: 30%; }
+
+  .hero h1 {
+    font-size: 50px; } }
 header.info__1 {
   background-color: #3a4b9f;
   padding: 5px 0;
