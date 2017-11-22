@@ -9,7 +9,7 @@
 
 
         $to='mmrangeen@gmail.com';
-        $subject='Form Murermester Jørgen Høgedal Aps';
+        $subject='Form Murermester Jørgen Høgedal ApS';
         $message="Navn: ".$Navn."\n"."Efternavn: ".$Efternavn."\n"."Tlf: ".$Tlf."\n"."mail: ".$mail."\n"."Besked: ".$besked."\n"."\n";
         $headers="From: ".$email;
 

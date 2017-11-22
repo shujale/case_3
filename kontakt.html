@@ -81,7 +81,7 @@
         <!-- Kontakt info -->
         <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="kontakt__info__container">
-            <div class="tekst_kontakt">
+            <div class="kontakt__info__container">
               <h1 class="contact__title">Kontakt os</h1>
               <p>Murermester Jørgen Høgedal Aps</p>
               <p><b>Adresse:</b> Nørager 12, 7260, Sdr. Omme</p>
@@ -92,46 +92,41 @@
         </div>
         <!-- Kontakt form -->
         <div class="col-sm-12 col-md-8 col-lg-8">
-          <div class="floating-box1">
-            <div class="feedback__formel">
-              <div class="myform"></div>
-              <form action="mail_handler.php" method="post" name="form" class="form-box">
-                <div class="info">
-                  <h1>Tilmeld dig idag og tjen penge på din bil imorgen </h1></div>
-                <div class="form_item form_col1">
-                  <label for="navn">Fornavn</label><br>
-                  <div>
-                    <input type="text" name="Navn" class="inp" id="navn" placeholder="Fornavn" required>
-                  </div>
+          <div class="kontakt__container">
+            <h1>Vi glæder os til at høre fra dig.</h1>
+            <form action="mail_handler.php" method="post" name="form" class="form-box">
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                  <label for="navn">Navn<span class="required-field">*</span></label>
+                  <input type="text" name="Navn" class="inp form-control" id="navn" placeholder="Fornavn" required>
                 </div>
-                <div class="form_item form_col2">
-                  <label for="navn">Efternavn</label><br>
-                  <div>
-                    <input type="text" name="Efternavn" class="inp" id="navn" placeholder="Efternavn" required><br><br>
-                  </div>
+                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                  <label for="navn">Efternavn<span class="required-field">*</span></label>
+                  <input type="text" name="Efternavn" class="inp form-control" id="navn" placeholder="Efternavn" required>
                 </div>
-
-                <div class="form_item form_col1">
-                  <label for="tlf"> Telefon nummer</label><br>
-                  <div>
-                    <input type="tel" name="Tlf" class="inp" id="tlf" placeholder="+45 xx xxx xxx" required><br><br>
-                  </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                  <label for="tlf">Telefonnummer</label>
+                  <input type="tel" name="Tlf" class="inp form-control" id="tlf" placeholder="+45 xx xxx xxx" required><br><br>
                 </div>
-
-                <div class="form_item form_col2">
-                  <label for="mail">E-mail</label><br>
-                  <div>
-                    <input type="bil" name="mail" class="inp" id="mail" placeholder="Eksempel@gmail.com" required><br><br>
-                  </div>
+                <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                  <label for="navn">Email<span class="required-field">*</span></label>
+                  <input type="bil" name="mail" class="inp form-control" id="mail" placeholder="Eksempel@gmail.com" required><br><br>
                 </div>
-                <div class="form_item form_col3">
-                  <textarea class="msg" name="besked"></textarea>
-
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                  <label for="navn">Besked<span class="required-field">*</span></label>
+                  <textarea class="msg form-control" name="besked" placeholder="Skriv en besked..."></textarea>
                 </div>
-
-                <div class="form_item"><input type="submit" name="Sendmsg" value="Send" class="my_btn" id="sub-btn"></div>
-              </form>
-            </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <button type="submit"  class="btn btn-primary" name="Sendmsg" value="Send">Send</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -153,20 +148,21 @@
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h3 class="footer__title">Sitemap</h3>
           <ul>
-            <li><a href="# ">Forside</a></li>
-            <li><a href="# ">Om os</a></li>
-            <li><a href="# ">Arbejdsopgaver</a></li>
-            <li><a href="# ">Referencer</a></li>
-            <li><a href="# ">Kontakt</a></li>
+            <li><a href="index.html ">Forside</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+            <li><a href="arbejdsopgaver.html ">Arbejdsopgaver</a></li>
+            <li><a href="kontakt.html ">Kontakt</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h3 class="footer__title">Samarbejdspartnere</h3>
           <ul>
-            <li><a href="index.html ">Forside</a></li>
-            <li><a href="om-os.html">Om os</a></li>
-            <li><a href="arbejdsopgaver.html ">Arbejdsopgaver</a></li>
-            <li><a href="kontakt.html ">Kontakt</a></li>
+            <li>Murermester Benny Sørensen</li>
+            <li>Tømrerfirmaet Torben Holt</li>
+            <li>Knud Jørgensen el ApS</li>
+            <li>Vesterhusbyg ApS</li>
+            <li>EgKris Smedie og VVS</li>
+            <li>Arkitetfirmaet Kloden ApS</li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12">
