@@ -11,7 +11,7 @@
         $to='mmrangeen@gmail.com';
         $subject='Form Murermester Jørgen Høgedal ApS';
         $message="Navn: ".$Navn."\n"."Efternavn: ".$Efternavn."\n"."Tlf: ".$Tlf."\n"."mail: ".$mail."\n"."Besked: ".$besked."\n"."\n";
-        $headers="From: ".$email;
+        $headers="From: ".$mail;
 
         if(mail($to, $subject, $message, $headers)){
             echo "<h1> Tak for din henvendelse"." ".$Navn.", du vil blive kontaktet snarest muligt</h1>";
