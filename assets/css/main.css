@@ -469,7 +469,7 @@ section.info__form__section {
     text-align: center;
     text-transform: uppercase;
     padding: 15px 0;
-    transition: .3s ease-in; }
+    transition: 0.3s ease-in; }
     .genvej__boks .genvej__boks__knap:hover {
       padding: 30px 0; }
     .genvej__boks .genvej__boks__knap .genvej__titel {
@@ -500,7 +500,7 @@ section.info__form__section {
       text-align: center;
       text-transform: uppercase;
       padding: 15px 0;
-      transition: .3s ease-in; }
+      transition: 0.3s ease-in; }
       .genvej__boks .genvej__boks__knap:hover {
         padding: 30px 0; }
       .genvej__boks .genvej__boks__knap .genvej__titel {
@@ -517,18 +517,25 @@ section.info__form__section {
   float: right;
   display: inline-block;
   align-content: center;
-  margin-top: 0%;
+  margin-top: 0;
   border: 1px solid; }
 
+.info_boks {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #3a4b9f;
+  border: 1px solid white;
+  border-radius: 0 70% 0 0; }
+
+.info_tekst {
+  font-size: 18px; }
+
 .boks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
   color: #ffffff; }
-
-.info_boks {
-  background-color: #3a4b9f;
-  display: inline-block;
-  border: 1px solid white;
-  border-radius: 0% 70% 0% 0%; }
 
 .timeline {
   list-style: none;
