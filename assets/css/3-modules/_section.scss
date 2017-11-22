@@ -60,3 +60,21 @@ section.timeline {
     margin: auto auto 50px;
   }
 }
+//Sektioner på kontakt siden
+
+section.kontakt-os-hero {
+  padding: $section-padding-three;
+  color: $white-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-weight: 700;
+
+  }
+}
+
+section.info__form__section{
+  padding: $section-padding-three;
+}

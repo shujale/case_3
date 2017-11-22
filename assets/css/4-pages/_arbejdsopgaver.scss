@@ -1,0 +1,51 @@
+.img_arbejdopg1 {
+  width: 100%;
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overskrift_1 {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.arbejdopg_container {
+  padding: 5%;
+}
+
+.tekst {
+  line-height: 2;
+}
+
+.imgs_teskt {
+  text-align: center;
+}
+
+.floating-box3 {
+  float: left;
+  width: 25%;
+  padding-left: 5%;
+}
+
+.floating-box4 {
+  float: right;
+  width: 65%;
+  margin: 0;
+  padding-right: 5%;
+  color: white;
+}
+
+.arb__opg__container {
+  padding-left: 0;
+
+  .arb_opg {
+    list-style-type: none;
+
+    .fa {
+      margin-right: 5px;
+      color: $primary-color;
+    }
+  }
+}
