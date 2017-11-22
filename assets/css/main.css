@@ -425,7 +425,8 @@ section.kontakt-os-hero {
   background-repeat: no-repeat;
   background-size: cover; }
   section.kontakt-os-hero h1 {
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75); }
 
 section.info__form__section {
   padding: 50px 0; }
