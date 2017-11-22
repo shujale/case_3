@@ -319,18 +319,22 @@ input::placeholder {
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media (min-width: 980px) {
-  .hero {
-    width: 980px; }
-
-  .hero h1 {
-    font-size: 30px; } }
 @media (min-width: 768px) {
   .hero {
     top: 34%; }
 
   .hero h1 {
     font-size: 25px; } }
+@media (min-width: 992px) {
+  .hero {
+    width: 980px;
+    top: 40%; }
+
+  .hero h1 {
+    font-size: 30px; } }
+@media (min-width: 1200px) {
+  .hero {
+    top: 30%; } }
 header.info__1 {
   background-color: #3a4b9f;
   padding: 5px 0;
