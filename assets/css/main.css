@@ -721,8 +721,8 @@ section.info__form__section {
       color: #3a4b9f; }
 
 .floating-box1 {
-  background-color: navy;
-  color: white;
+  background-color: #3a4b9f;
+  color: #ffffff;
   float: left;
   margin-left: 1%;
   margin-bottom: 3%;
@@ -745,7 +745,7 @@ section.info__form__section {
 form {
   width: 100%;
   float: right;
-  color: #D5D5D5;
+  color: #ffffff;
   border-radius: 1% x; }
 
 .form_item {

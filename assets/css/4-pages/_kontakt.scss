@@ -1,7 +1,7 @@
 
 .floating-box1 {
-  background-color: navy;
-  color: white;
+  background-color: $primary-color;
+  color: $white-color;
   float: left;
   margin-left: 1%;
   margin-bottom: 3%;
@@ -28,7 +28,7 @@
 form {
   width: 100%;
   float: right;
-  color: #D5D5D5;
+  color: $white-color;
   border-radius: 1%x;
 }
 
