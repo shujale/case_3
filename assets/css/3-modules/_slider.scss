@@ -52,7 +52,7 @@
 /********************************/
 .hero {
   position: absolute;
-  top: 60%;
+  top: 45%;
   left: 50%;
   z-index: 99;
   width: 400px;
@@ -133,13 +133,6 @@
 /*          Media Queries       */
 /********************************/
 
-@media(min-width: 767px)
-{
-  .hero h1{
-    font-size: 25px;
-  }
-}
-
 @media(min-width: 980px) {
   .hero {
     width: 980px;
@@ -147,5 +140,15 @@
 
   .hero h1{
     font-size: 30px;
+  }
+}
+
+@media(min-width: 768px)
+{
+  .hero{
+    top: 34%;
+  }
+  .hero h1{
+    font-size: 25px;
   }
 }
