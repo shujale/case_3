@@ -674,11 +674,16 @@ section.info__form__section {
 .timeline-body > p + p {
   margin-top: 5px; }
 
+.gallery__container img {
+  width: 100% !important;
+  height: 250px; }
+
 .filter__container {
   margin-top: 20px;
   margin-bottom: 30px; }
   .filter__container .btn-secondary {
-    min-width: 200px;
+    min-width: 190px;
+    margin-left: 5px;
     margin-bottom: 20px; }
 
 .box__about {

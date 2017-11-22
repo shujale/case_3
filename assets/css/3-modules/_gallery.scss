@@ -1,11 +1,17 @@
 //CSS for filter
-
+.gallery__container{
+  img{
+    width: 100% !important;
+    height: 250px;
+  }
+}
 .filter__container {
   margin-top: 20px;
   margin-bottom: 30px;
 
   .btn-secondary {
-    min-width: 200px;
+    min-width: 190px;
+    margin-left: 5px;
     margin-bottom: 20px;
   }
 }
